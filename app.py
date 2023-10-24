@@ -3,7 +3,7 @@ from flask_cors import CORS
 from g4f import ChatCompletion
 
 app = Flask(__name__)
-CORS(app, origins=['http://localhost:5173', 'https://gpt4free-flask-vercel.vercel.app/api/chat'])
+CORS(app, origins=['http://localhost:5173', 'https://gpt4free-flask-vercel.vercel.app'])
 
 
 @app.route('/api/chat', methods=['POST'])
